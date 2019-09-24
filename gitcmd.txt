@@ -1,0 +1,4 @@
+git branch -vv  查看本地分支及追踪的分支
+git branch -a   查看所有远端
+git branch --set-upstream-to=origin/<branch> master 设置远程跟踪
+
