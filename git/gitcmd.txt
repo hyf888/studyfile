@@ -1,4 +1,5 @@
 git branch -vv  查看本地分支及追踪的分支
 git branch -a   查看所有远端
 git branch --set-upstream-to=origin/<branch> master 设置远程跟踪
+git reset --hard 目标版本号        命令将版本强制回退到特定目标版本
 
