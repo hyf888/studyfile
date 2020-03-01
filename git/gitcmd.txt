@@ -36,3 +36,17 @@ git push -u origin --all
 git push -u origin --tags
 
 
+命令上github
+1、git branch -a //查看所有分支
+2、git checkout <branch>
+3、git pull //从远端更分支
+4、修改文件
+5、git status  //查看修改的文件细则
+6、git add . //增加到胡·缓冲区
+7、git status   //再次查看状态
+8、git pull origin master  //可能会产生冲突
+9、git commit -m  "日志更改记录内容"
+10、git push origin <branch>// 提交到分支远端
+11、git checkout master  //进入到要被合入的分支
+12、git branch 
+13、git merge <branch>//将此分支的内容合入到当前的所在的分支内
