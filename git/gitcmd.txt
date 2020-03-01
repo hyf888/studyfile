@@ -49,4 +49,4 @@ git push -u origin --tags
 10、git push origin <branch>// 提交到分支远端
 11、git checkout master  //进入到要被合入的分支
 12、git branch 
-13、git merge <branch>//将此分支的内容合入到当前的所在的分支内
+13、git merge origin/<branch>//将此远端的分支内容合入到当前的所在的分支内
