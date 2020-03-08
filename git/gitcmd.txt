@@ -79,6 +79,7 @@ pull时发现，当前的分支并没有和本地分支关联，根据提示进行下一步：
 5. 关联
 1、git branch --set-upstream-to=origin/<branch> <branch>
 2、git branch --set-upstream-to=origin/<branch> 
+3、git branch --unset-upstream
  
 6. 再次拉取 验证
 git pull
