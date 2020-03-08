@@ -36,3 +36,55 @@ git push -u origin --all
 git push -u origin --tags
 
 
+命令上github
+1、git branch -a //查看所有分支
+2、git checkout <branch>
+3、git pull //从远端更分支
+4、修改文件
+5、git status  //查看修改的文件细则
+6、git add . //增加到缓冲区
+7、git status   //再次查看状态
+8、git pull origin master  //可能会产生冲突
+9、git commit -m  "日志更改记录内容"
+10、git push origin <branch>// 提交到分支远端
+11、git checkout master  //进入到要被合入的分支
+12、git branch 
+13、git merge origin/<branch>//将此远端的分支内容合入到当前的所在的分支内
+
+
+git 创建分支并关联远程分支
+从master分支，重新拉取出一个新的分支，名字为<branch>,具体命令如下：
+1. 切换到被copy的分支（master），从服务器拉取最新版本
+git checkout master
+git pull
+ 
+2. 从当前分支copy出新的开发分支 命名<branch>分支
+git checkout -b <branch>
+
+3. 把新建的分支push到远端
+git push origin <branch>
+
+4. 拉取远端分支
+git pull
+
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+git pull <remote> <branch>
+If you wish to set tracking information for this branch you can do so with:
+git branch --set-upstream-to=origin/<branch> dev
+
+pull时发现，当前的分支并没有和本地分支关联，根据提示进行下一步：
+
+5. 关联
+1、git branch --set-upstream-to=origin/<branch> <branch>
+2、git branch --set-upstream-to=origin/<branch> 
+ 
+6. 再次拉取 验证
+git pull
+
+7、git push origin master:<branch> //本地分支master推送至远端分支，如果远端分支不存在，则创建
+
+
+删除远端分支
+git push origin --delete <branch>
