@@ -48,7 +48,7 @@ git push -u origin --tags
 9、git commit -m  "日志更改记录内容"
 10、git push origin <branch>// 提交到分支远端
 11、git checkout master  //进入到要被合入的分支
-12、git branch 
+12、git branch
 13、git merge origin/<branch>//将此远端的分支内容合入到当前的所在的分支内
 
 
@@ -57,7 +57,7 @@ git 创建分支并关联远程分支
 1. 切换到被copy的分支（master），从服务器拉取最新版本
 git checkout master
 git pull
- 
+
 2. 从当前分支copy出新的开发分支 命名<branch>分支
 git checkout -b <branch>
 
@@ -78,9 +78,9 @@ pull时发现，当前的分支并没有和本地分支关联，根据提示进行下一步：
 
 5. 关联
 1、git branch --set-upstream-to=origin/<branch> <branch>
-2、git branch --set-upstream-to=origin/<branch> 
+2、git branch --set-upstream-to=origin/<branch>
 3、git branch --unset-upstream
- 
+
 6. 再次拉取 验证
 git pull
 
@@ -89,3 +89,6 @@ git pull
 
 删除远端分支
 git push origin --delete <branch>
+
+删除本地分支
+git branch -D <branch>
